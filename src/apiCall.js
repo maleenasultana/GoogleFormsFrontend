@@ -2,7 +2,7 @@ import Cookies from 'universal-cookie';
 import axios from 'axios';
 
 export const cookie = new Cookies();
-axios.defaults.baseURL = 'https://google-forms-backend.vercel.app/api/v1';
+axios.defaults.baseURL = 'https://g-forms.onrender.com/api/v1';
 
 export const signUpUser = async(user) => {
     return await axios.post('/auth/signup', user, {
