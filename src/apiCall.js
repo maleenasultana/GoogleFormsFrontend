@@ -2,7 +2,7 @@ import Cookies from 'universal-cookie';
 import axios from 'axios';
 
 export const cookie = new Cookies();
-axios.defaults.baseURL = 'https://gooforms-d3te.onrender.com/api/v1' || 'http://localhost:8000/api/v1';
+axios.defaults.baseURL = 'https://gforms.onrender.com/api/v1' || 'http://localhost:8000/api/v1';
 
 export const signUpUser = async(user) => {
     return await axios.post('/auth/signup', user, {
